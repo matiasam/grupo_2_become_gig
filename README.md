@@ -7,5 +7,5 @@
 # Equipo:
   
   
-# Integrantes del equipo:
+# Referencias:
 

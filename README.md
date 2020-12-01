@@ -1,2 +1,11 @@
-# grupo_2_tbd
-Trabajo Integrador DH Node
+# Grupo_2_
+  Trabajo Integrador DH Node
+
+# E-commerce:
+  
+
+# Equipo:
+  
+  
+# Integrantes del equipo:
+

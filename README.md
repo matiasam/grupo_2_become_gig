@@ -6,7 +6,7 @@
 
   ¿Qué servicios va a comerciar?
   
-  Hay muchos sitios de freelance, pocos de desarrolladores a formarse.  
+  Hay muchos sitios de freelance con experiencia, pocos que ofrecen horas de desarrolladores con conocimiento pero sin experiencia aun.  
   
   Se ofrece el servicio de horas de desarrollo (Full Stack, UX, Data Science) en formato de prácticas profesionales.  Esas horas son de personas que recién están terminando un   
   
@@ -14,7 +14,7 @@
   
   ¿A quién está dedicado?
   
-  Esta dedicado a PYMEs que no poseen una gran cantidad de presupuesto para expandirse hacia los canales digitales.
+  Esta dedicado a PYMEs que no poseen presupuesto en tecnología y puedan expandirse hacia los canales digitales y requieren horas inciales.
   
   
 # Equipo:

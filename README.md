@@ -30,7 +30,9 @@
 Diseño:
 
 www.freelancer.com
+
 www.fiverr.com
+
 www.peopleperhour.com
 
 
@@ -42,6 +44,7 @@ www.upwork.com
 Servicio:
 
 www.codementor.io
+
 www.guru.com
 
 

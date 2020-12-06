@@ -48,5 +48,8 @@ www.codementor.io
 www.guru.com
 
 
+# Seguimiento del proyecto:
+
+https://trello.com/b/EZvuX19W/fs
   
 

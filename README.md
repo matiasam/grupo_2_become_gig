@@ -1,4 +1,4 @@
-# Grupo_2_TalentoDigital
+# Grupo_2_BecomeGIG
 
   Trabajo Integrador Digital House Full Stack a distancia
 

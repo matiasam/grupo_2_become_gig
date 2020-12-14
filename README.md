@@ -6,15 +6,13 @@
 
   ¿Qué servicios va a comerciar?
   
-  Hay muchos sitios de freelance con experiencia, pocos que ofrecen horas de desarrolladores con conocimiento pero sin experiencia aun.  
+Hay muchos sitios de freelance con experiencia, pocos que ofrecen horas de desarrolladores con conocimiento pero sin experiencia aun.  
   
-  Se ofrece el servicio de horas de desarrollo (Full Stack, UX, Data Science) en formato de prácticas profesionales.  Esas horas son de personas que recién están terminando un   
-  
-  programa o curso y aun no tienen experiencia profesional. Son prácticas profesionales entre 3 y 6 meses. El pago se realizó sólo si queda una implementación.  
+Se ofrece el servicio de horas de desarrollo (Full Stack, UX, Data Science) en formato de prácticas profesionales. Esas horas son de personas que recién terminaron o     próximo a terminar un programa o curso y aun no tienen experiencia profesional. Son prácticas profesionales entre 3 y 6 meses. El pago se realiza sólo si queda una implementación.  
   
   ¿A quién está dedicado?
   
-  Esta dedicado a PYMEs que no poseen presupuesto en tecnología y puedan expandirse hacia los canales digitales y requieren horas inciales.
+Esta dedicado a PYMEs que no poseen presupuesto en tecnología y puedan expandirse hacia los canales digitales y requieren horas inciales.
   
   
 # Equipo:

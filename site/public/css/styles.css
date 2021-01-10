@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+
+body {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #cf5c36ff;
+    padding: 5px 2px;
+}
+
+
+.main-header {
+    max-width: 70%;
+    padding: 2px;
+    margin: auto;
+    background-color: #cf5c36ff;
+}
+
+.main-header-top-bar{
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #cf5c36ff;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+}
+
+
+
+.logo-search {
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+}
+
+.logo {
+    padding: 2%;
+    width: 60%;
+}
+
+
+@media (min-width: 490px) {
+    body header div div form {
+        width: 30%;
+    }}
+    
+body header div div form {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+input[type="text"], input[type="email"], input[type="date"], input[type="file"], input[type="password"] {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #222;
+    padding: 1%;
+}
+
+.search-button {
+    width: 2.2rem;
+    background-color: white;
+    border: 1px solid #fff;
+    border-left: 0.8px solid rgb(216, 213, 213);
+    margin-left: 0px;
+    border-radius: 0 5px 5px 0;
+    padding: 4px 0px;
+}
+
+
+
+header div.menu-service{
+column-gap: 25px;
+width: 20%;
+color: #2B2D42;
+font-size: small;
+font-weight: 200;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #EEE5E9;
+font-weight: bold;
+border-radius: 7px;
+padding: 0.5%;
+text-align: justify;
+text-justify: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 490px) {
+.copy-header {
+    max-width: 180px;
+    text-align: right;
+}
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+

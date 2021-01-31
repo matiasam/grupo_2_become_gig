@@ -8,7 +8,7 @@ const PublicPath = path.resolve(__dirname, './public');
 app.use(express.static(PublicPath));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'));
+    res.sendFile(path.join(__dirname, '/views/partials/index.ejs'));
 });
 
 app.listen(3000, () => { 

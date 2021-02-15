@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <head>
-            <meta charset="UTF-8">
-            <title>Hire from Become GIG</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="https://fonts.googleapis.com/css2?family=Lato:display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-            <link rel="stylesheet" href="css/styles.css">
-        </head>
-
-        <div class="hero-image">
-            <img class="avatar" src="images/avatar2.jpg" alt="Avatar" >
-                <div class="hero-text">
-                    <h1>I am Magico </h1>
-                    <p>And I'm a <%= users[0].name%> </p>
-                    <button class="button-hire">Hire me</button>
-                </div>
+<html lang="en">
+<%- include('partials/head.ejs') %>
+<body>
+    <%- include('partials/header.ejs')%>
+    <main>
+        <div class="container">
+            <% users.forEach(user => { %>
+                <article class="card">
+                    <div class="card-left">
+                        <figure>
+                            <img src="<%= user.img%>" alt="">
+                        </figure>
+                        <h3>#<%= user.id %></h3>
+                    </div>
+                    <div class="card-content">
+                        <h3><%= user.name %></h3>
+                        <p><%=user.Technical_Skills%></p>
+                        <p><%=user.rating%></p>
+                        <p>Email: <a href="mailto:<%=user.email %>" target="_blank"><%=user.email%></a></p>
+                        <div>
+                            <a class="button" href="/users/1">Ver detalle</a>
+                        </div>
+                    </div>   
+                </article>
+            <% }) %>
         </div>
+    </main>
+    <%- include('partials/footer.ejs') %>
 </body>
-<%- include('./partials/footer.ejs')%>
 </html>
 

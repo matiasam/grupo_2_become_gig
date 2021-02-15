@@ -1,18 +1,23 @@
-const path = require('path');
-
+// Modulos
 const express = require('express');
-
 const app = express();
+const methodOverride = require('method-override');
 
-const PublicPath = path.resolve(__dirname, './public');
-app.use(express.static(PublicPath));
+// Configuración
+app.use(express.static('public'));
+app.set('view engine', 'ejs');
+app.set('views', 'src/views');
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/partials/index.ejs'));
-});
+// Formularios
+app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 
-app.listen(3000, () => { 
-    console.log('-----------------------------------------------')
-    console.log('Todo salio OK! Ya podés ir a http://localhost:3000');
-    console.log('-----------------------------------------------')
-});
+// Rutas
+const mainRouter = require('./routes/mainRouter');
+const usersRouter = require('./routes/usersRouter');
+
+app.use('/', mainRouter);
+app.use('/users', usersRouter);
+
+// Iniciamos el servidor
+app.listen(3000, () => { console.log('Servidor escuchando en el puerto 3000') });

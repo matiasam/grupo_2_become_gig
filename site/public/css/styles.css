@@ -24,10 +24,10 @@
     --warning-color: var(--yellow);
     --danger-color: var(--orange);
 
-    --default-margin: .5rem;
-    --default-padding: .5rem;
+    --default-margin: 0.5rem;
+    --default-padding: 0.5rem;
 
-    --default-radius: .5rem;
+    --default-radius: 0.5rem;
 }
 
 * {
@@ -38,8 +38,129 @@ html {
     font-family: sans-serif;
 }
 
-body {
+header{
+    background-color: #CF5C36;
+}
+
+
+div.top-header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #CF5C36;
+}
+
+header .logo{
+    width: 20%;
+    padding-left: 2px;
+    float:left;
+    margin-bottom:2px;
+}
+
+header .logo2{
+    width: 80%;
+    padding-left: 40px;
+    float:left;
+    margin-bottom:2px;
+}
+
+header .menu{
+    padding-left:20px;
+    font-weight: lighter;
+    width: 100%;
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header div.menu-categories{
+    padding:10px;
+    font-weight: lighter;
+    column-gap: 25px;
+    width: 65%;
+    color: red;
+    font-size: small;
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+header div.menu-service{
+    column-gap: 25px;
+    width: 10%;
+    color: #2B2D42;
+    font-size: small;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EEE5E9;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 5px 25px 5px 25px;
+    
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header nav{
+    font-size: 15px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    float: bottom;
+    padding: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid rgb(156, 156, 156);
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 600px;
+    height: 25px;
+    padding-left: 10px;
+    padding-top: 7px;
+    border-radius: 10px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+body{
     margin: 0;
+    font-family: sans-serif,'Roboto';
 }
 
 a {
@@ -51,7 +172,7 @@ a.button { color: #333; }
 
 /* Helpers */
 
-.is-rounded { border-radius: 50%; }
+.is-rounded { border-radius: 90%; }
 
 /* Contenedores */
 
@@ -200,7 +321,7 @@ select { width: 100%; }
         width: 30%;
         padding: 1rem;
         
-        background-color: #F6285B;
+        background-color: #cf5c36ff;
         color: white;
         text-align: center;
         
@@ -231,30 +352,101 @@ select { width: 100%; }
         border-radius: 0 var(--default-radius) var(--default-radius) 0;
     }
 
-header {
-    background-color: #58355E;
-    color: white;
-    padding: 1rem;
-}
-
-header nav a {
-    display: inline-block;
-    background-color: #7AE7C7;
-    color: #333;
-    padding: var(--default-padding);
-    margin: 0 var(--default-margin);
-    border-radius: var(--default-radius);
-}
-
-header nav a:hover {
-    background-color: #BAF2E1;
-}
-
 
 main {
     padding: 1rem;
 }
 
+
+.footer-text{
+    padding-left: 70px;
+    padding-top: 17px;
+    text-align: left;
+    font-size: 18px;
+    float: left;
+    color: grey;
+}
+.rounded-social-buttons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    text-align: right;
+    background-color: white;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #CF5C36;
+  background: #fefefe;
+  border-color: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #CF5C36;
+  background: #fefefe;
+  border-color: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #CF5C36;
+  background: #fefefe;
+  border-color: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #CF5C36;
+  background: #fefefe;
+  border-color: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #CF5C36;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #CF5C36;
+  background: #fefefe;
+  border-color: #CF5C36;
+}
 
 
 

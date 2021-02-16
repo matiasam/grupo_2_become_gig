@@ -5,7 +5,7 @@ module.exports = {
         res.render('index', {users});
     },
     detail: (req, res) => {
-        res.render('detail');
+        res.render('detail',{users});
     },
     contact: (req, res) => {
         res.send('Estoy en la página de contacto');

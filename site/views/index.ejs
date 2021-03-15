@@ -1,32 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-<%- include('partials/head.ejs') %>
-<body>
-    <%- include('partials/header.ejs')%>
-    <main>
-        <div class="container">
-            <% users.forEach(user => { %>
-                <article class="card">
-                    <div class="card-left">
-                        <figure>
-                            <img src="<%= user.img%>" alt="">
-                        </figure>
-                        <h3>#<%= user.id %></h3>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Become GIG</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" type="image/png" href="/favicon.png"/>
+        <link rel="icon" type="image/png" href="https://i.imgur.com/iQLOTux.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="images/img-logo.png" alt="Logo de Become Gig">
+                </div>
+
+                <div class="menu">
+                    <div class="menu-categories">
+                        <ul><a href="#">Graphic & Design</a></ul>
+                        <ul><a href="#">Digital Marketing</a></ul>
+                        <ul><a href="#">Programming & Tech</a></ul>
+                        <ul><a href="#">Writing & Translation</a></ul>
+                        <ul><a href="#">Video & Animation</a></ul>
                     </div>
-                    <div class="card-content">
-                        <h3><%= user.name %></h3>
-                        <p><%=user.Technical_Skills%></p>
-                        <p><%=user.rating%></p>
-                        <p>Email: <a href="mailto:<%=user.email %>" target="_blank"><%=user.email%></a></p>
-                        <div>
-                            <a class="button" href="/users/1">Ver detalle</a>
-                        </div>
-                    </div>   
-                </article>
-            <% }) %>
-        </div>
-    </main>
-    <%- include('partials/footer.ejs') %>
+                    <div class="menu-service">
+                        <ul>Register</ul>
+                        <ul><a href="">Login</a></ul>
+                    </div>
+                </div> 
+                </div>
+
+        </header>
+        <main>
+            <section class="banner">
+                <div class="hero-text">
+                    <h1>Looking for your next GIG?</h1>
+                    <input type="password" placeholder="Search jobs..." name="psw" required>
+                    <button>Finds jobs</button>
+                  </div>
+            </section>
+            <h3>Recommended Profiles</h3>
+            <section class="profiles">
+                <% users.forEach(users => { %>
+                <div class=profiles_din>
+                    <a href="./:id"><img width="75px" height="75px" src="<%= users.img%>" alt="Logo de Become Gig"></a>
+                    <h1><%= users.name %></h1>
+                    <h3><%= users.email%></h3>
+                    <div class="skills_group">
+                        <div class="skills"><p><%= users.Technical_Skills%></p></div>
+                        <div class="skills"><p>_skill-2_</p></div>
+                        <div class="skills"><p>_skill-3_</p></div>
+                        <div class="skills"><p>_skill-4_</p></div>
+                        <div class="skills"><p>_skill-5_</p></div>
+                        <div class="skills"><p>_skill-6_</p></div>
+                        <div class="skills"><p>_skill-7_</p></div>
+                        <div class="skills"><p>_skill-8_</p></div>
+                        <div class="skills"><p>_skill-9_</p></div>
+                    </div>
+                </div>
+                <% }) %>
+            </section>
+            
+            <h3>Recommended Jobs</h3>
+            <section class="jobs">
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+            </section>
+
+            <section class="jobs">
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+                <div class=jobs_din>
+                    <img src="images/img-logo-small.png" alt="Logo de Become Gig">
+                    <h1>_BU_</h1>
+                    <h3>_POS_</h3>
+                    <p>_REQS_</p>
+                    <div class="but-apply">Apply</div>
+                </div>
+            </section>
+
+            <section class="offers">
+                <h3>Who hires using Become-GIG?</h3>
+                <div class="products">
+                    <article>
+                        <img src="images/img-empresa-1.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-2.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-3.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-4.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-5.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-6.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-7.png" alt="Cafetera" class="product_img">
+                    </article>
+                    <article>
+                        <img src="images/img-empresa-8.png" alt="Cafetera" class="product_img">
+                    </article>
+
+                    
+                </div>  
+            </section>
+        </main>
 </body>
+<%- include('./partials/footer.ejs')%>
 </html>
 
